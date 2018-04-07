@@ -30,5 +30,5 @@ submitButton.addEventListener('click', function(e){
 
 document.getElementById('pixelCanvas').addEventListener("click", function(){
 	
-    this.style.backgroundColor = "red";
+    this.style.backgroundColor = colorPicked.value;
 });
