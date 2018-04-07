@@ -30,5 +30,14 @@ submitButton.addEventListener('click', function(e){
 
 document.getElementById('pixelCanvas').addEventListener("click", function(){
 	
-    this.style.backgroundColor = colorPicked.value;
+var rows = document.getElementById('inputHeight').value;
+var columns = document.getElementById('inputWeight').value;
+	for(let i=0; i<rows;i++){
+		for(let x=0; x<columns;x++){
+			if(clicked)
+				table[i][x].style.backgroundColor = colorPicked.value;
+		}
+	}
+   //this.style.backgroundColor = colorPicked.value;
 });
+
